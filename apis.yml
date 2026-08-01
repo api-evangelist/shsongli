@@ -1,7 +1,26 @@
 aid: shsongli
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shsongli.png
 name: shsongli
-description: shsongli is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'shsongli (Shanghai Pine & Power / Songli Biotech Co., Ltd.) is a Shanghai-based
+  biotechnology and medical-device maker specializing in the R&D, manufacture and sale of
+  biological hemostatic products, most notably animal-derived quick-dissolving fibrin glue
+  with independent IP, used in surgery and expanding into tissue engineering. The company
+  operates a Class III medical-device line and is ISO 13485 and GMP certified. Surfaced as a
+  portfolio company of the venture firm qiming and added to the API Evangelist network. The
+  enrichment pass found no public developer or API surface: the shsongli.com domain returns
+  404 on every path (EIMS web server) with an expired TLS certificate, and no docs, portal,
+  packages, MCP, llms.txt, /.well-known/ endpoints, or security program were published.'
 url: https://raw.githubusercontent.com/api-evangelist/shsongli/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +30,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Biotechnology
+- Medical Devices
+- Healthcare
+- Hemostatic Products
+- Tissue Engineering
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/shsongli-domain-security.yml
 - type: Website
   url: https://shsongli.com
